@@ -2,33 +2,53 @@ body {
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
 }
 
 
+/* Header  */
+
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #69523A;    
+
+}
 
 .header {
     display: flex;
-    background-color: #3d6464;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    height: 80px;
-
-    
+    flex-shrink: 1;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+    width: 1200px;
 }
 
-.left-logo {
-    font-size: 48px;
+/* Hero Container */
+
+.hero-container {
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    justify-items: flex-start;
-    font-weight: 400;
-    font-family: "Rubik Dirt", cursive;
-    color:white
+    justify-content: center;
+    background-color: #FFFAEE;
+    flex-wrap: wrap;
+}
+
+.hero-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    height: 415px;
+    gap: 100px;
+    background-color: #FFFAEE;
 }
 
 ul {
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 16px;
+    color: #DAD2BC; 
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -39,7 +59,7 @@ ul {
 }
 
 a:visited {
-    color: rgb(177, 250, 234);
+    color: #DAD2BC
 }
 
 a {
@@ -47,181 +67,144 @@ a {
 }
 
 a:hover {
-    color: #81b8a6;
+    color: #FFFAEE;
 }
  
-.cta-top {
-    display: flex;
-    flex-direction: column;
-    gap: 10px
-    ;
-    
-}
-
-.hero-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    gap: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #81b8a6;
-}
-
-.hero-right {
-    background-color: #1F2937;
-    width: 400px;
-    height: 200px;
-    border-radius: 18px;
-
-}
-
-.imgholder {
-    width: 500px;
-    height: 200px;
-    border-radius: 30px;
-    border: 2px solid rgb(141, 214, 196);
-    object-fit: cover;
-   
-    
-}
-
 .first-btn {
     display: flex;
     justify-content: flex-start;
-
- 
 }
 
 .signup-1 {
-    width: 120px;
-    height: 35px;
+    width: 200px;
+    height: 45px;
+    background-color: #A99985;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
 }
 
+.first-btn {
+    padding-top: 10px;
+}
 
-
-
-
-
-
-
-
-
+.signup-2 {
+    width: 200px;
+    height: 45px;
+    background-color: #A99985;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
 
 .gallery {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 22px;
+    margin: 0;
+   
+
+}
+
+.gallery-container {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
-    padding: 10px 200px 60px 200px;
-    gap: 50px;
-   
-   
+    margin-bottom: 40px;
 }
 
-.header-gallery {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100px;
-    
-
-}
-    
-.corner {
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
-    border: 2px solid rgb(141, 214, 196);
-    object-fit: cover;
-
-}
+/* Quote */
 .quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    background-color: #81b8a6;
-    color: aliceblue;
+    font-weight: 600;
+    background-color: #A99985;
+    color: white;
     padding: 70px 50px 70px 5px;
 
 }
 
-.Q {
-    color: aliceblue;
-    padding: 0 100px;
+.author {
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: white;
 }
 
-.sbtn {
+hr {
+    width: 55px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    height: 5px;
+    background-color:#FFFAEE;
+}
+
+/* Call to Action Bottom*/
+
+.signup-container {
     display: flex;
-   
-
-}
-
-.hero-btn {
-    width: 150px;
-    height: 40px;
-    background-color: white;
-    border: #81b8a6;
-
-}
-.cta {
-    display: flex;
-    background-color: rgb(227, 240, 235);
     justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 250px;
-    
+    background-color:#FFFAEE;
 }
 
-
-h2 {
-    text-align: left;
-    padding: 0;
-
-}
 .signup {
     display: flex;
+    justify-content: center;
+    gap:200px;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 100px 30px 100px;
-    background-color: rgb(102, 146, 139);
-    width: 960px;
-    border-radius: 20px;
-    color: aliceblue;
 
 }
 
+.bottom-signup {
+    width: 200px;
+    height: 45px;
+    background-color: #A99985;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+
 
 }
-
-h3 {
-    line-height: 5px;
-
+.cta-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1200px;
+    background-color: #69523A;
+    color: white;
+    border-radius: 15px;
+   
 }
 
-p {
-    text-align: left;
+.cta-text {
+    padding: 50px 0px 50px 0px;
 }
-
-
 
 .footer {
     display: flex;
-    background-color: #1F2937;
+    background-color: #69523A;
     color: white;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 90px;
+    max-width: 1200px;
 }
 
-#autor {
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 400;
-    color:#3d6464
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #69523A;
 }
+
