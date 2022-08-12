@@ -8,9 +8,9 @@ body {
 
 /* Header  */
 
+
+
 .section-wrapper {
-    display: flex;
-    justify-content: center;
     background-color: #69523A;    
 
 }
@@ -30,28 +30,31 @@ body {
 .hero-container {
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: center;
     background-color: #FFFAEE;
-    flex-wrap: wrap;
 }
 
 .hero-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     max-width: 1200px;
     height: 415px;
     gap: 100px;
     background-color: #FFFAEE;
+    flex-shrink: 1 1 1;
 }
 
+.hero1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #69523A;
+}
+
+/* Right Nav */
+
 ul {
+    list-style-type: none;
     font-size: 16px;
     color: #DAD2BC; 
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
     gap: 30px;
     margin: 0;
     padding: 0%;
@@ -70,11 +73,6 @@ a:hover {
     color: #FFFAEE;
 }
  
-.first-btn {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .signup-1 {
     width: 200px;
     height: 45px;
@@ -99,24 +97,25 @@ a:hover {
     font-size: 16px;
 }
 
+/* Gallery */
+
 .gallery {
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 22px;
-    margin: 0;
-   
-
-}
-
-.gallery-container {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    gap: 18px;
+    max-width: 1200px;
     margin-bottom: 40px;
+
 }
+
+.caption {
+    text-align: center;
+    color: #69523A;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 
 /* Quote */
 .quote {
@@ -125,20 +124,16 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-size: 32px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-weight: 600;
     background-color: #A99985;
     color: white;
-    padding: 70px 50px 70px 5px;
+    padding: 70px 5px 70px 5px;
 
 }
 
 .author {
     font-size: 18px;
-    font-family: Roboto;
-    font-weight: 400;
-    color: white;
 }
 
 hr {
@@ -150,20 +145,20 @@ hr {
     background-color:#FFFAEE;
 }
 
-/* Call to Action Bottom*/
+/* Flex Boxes*/
 
-.signup-container {
+.signup-container, .signup, .footer, .footer-container, .gallery-container, ul, .hero-main, .hero-container, .section-wrapper {
     display: flex;
     justify-content: center;
-    background-color:#FFFAEE;
+    align-items: center;
 }
 
 .signup {
-    display: flex;
-    justify-content: center;
-    gap:200px;
-    align-items: center;
-
+    flex-shrink: 1 1 0;
+    height: 240px;
+    gap: 100px;
+    
+    
 }
 
 .bottom-signup {
@@ -178,8 +173,13 @@ hr {
 
 }
 .cta-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: 200px;
     width: 1200px;
     background-color: #69523A;
     color: white;
@@ -187,24 +187,22 @@ hr {
    
 }
 
-.cta-text {
-    padding: 50px 0px 50px 0px;
+h3 {
+    text-align: left;
+    margin: 0px;
+    
+    
 }
 
 .footer {
-    display: flex;
     background-color: #69523A;
     color: white;
-    justify-content: center;
-    align-items: center;
     height: 90px;
     max-width: 1200px;
 }
 
 
 .footer-container {
-    display: flex;
-    justify-content: center;
     background-color: #69523A;
 }
 
